@@ -1,0 +1,45 @@
+{
+  "name": "HyperViewRenderPack",
+  "type": "object",
+  "properties": {
+    "render_cache_key": {
+      "type": "string"
+    },
+    "manifest_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "format_version": {
+      "type": "string"
+    },
+    "pack_index": {
+      "type": "integer"
+    },
+    "file_uri": {
+      "type": "string"
+    },
+    "chunk_count": {
+      "type": "integer"
+    },
+    "packed_bytes": {
+      "type": "integer"
+    },
+    "chunk_map_json": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "render_cache_key",
+    "pack_index",
+    "file_uri",
+    "format_version"
+  ]
+}

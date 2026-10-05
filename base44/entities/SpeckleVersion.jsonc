@@ -1,0 +1,39 @@
+{
+  "name": "SpeckleVersion",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "referenced_object": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "source_application": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "data_format": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "last_sync_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "version_id"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "SavedView",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "camera": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "object_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filters": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "name",
+    "version_id"
+  ]
+}

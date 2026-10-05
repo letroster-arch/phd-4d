@@ -1,0 +1,8 @@
+import { Box, Layers3, GitBranch, Boxes, Ellipsis, Link2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import StatusBadge from '@/components/phd/StatusBadge';
+import { useWorkspace } from '@/components/phd/WorkspaceContext';
+export default function ModelBar() {
+  const { project, connection, modelState } = useWorkspace(); const ready = modelState.status === 'READY';
+  return <div className="model-bar"><div className="model-bar-icon"><Box size={19} /></div><div className="model-meta"><small>PROJETO</small><strong>{project?.name || connection?.project_name || 'Nenhum projeto conectado'}</strong></div><div className="model-meta optional"><Layers3 size={16} /><span><small>MODELO</small><strong>{connection?.model_name || 'Não configurado'}</strong></span></div><div className="model-meta optional"><GitBranch size={16} /><span><small>VERSÃO</small><strong>{connection?.version_id || '—'}</strong></span></div><div className="model-meta optional"><Boxes size={16} /><span><small>OBJETOS</small><strong>{modelState.count?.toLocaleString('pt-BR') || '—'}</strong></span></div><div className="model-health"><StatusBadge status={ready ? 'READY' : modelState.status === 'CARREGANDO MODELO' ? 'CARREGANDO' : 'AGUARDANDO CONEXÃO'} tone={ready ? 'ready' : 'muted'} /></div><Link to="/configuracoes" className="model-config" title="Configurar modelo Speckle"><Link2 size={14} /><span>Conectar modelo</span><Ellipsis size={16} /></Link></div>;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "ScheduleActivity",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "activity_code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "wbs": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "finish_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "physical_progress": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "data_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "cwa": {
+      "type": "string"
+    },
+    "cwp": {
+      "type": "string"
+    },
+    "import_job_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "activity_code",
+    "name"
+  ]
+}

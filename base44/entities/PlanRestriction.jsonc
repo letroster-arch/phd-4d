@@ -1,0 +1,35 @@
+{
+  "name": "PlanRestriction",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "activity_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "resolved"
+      ]
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "ImportJob",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "p6",
+        "ms_project",
+        "excel",
+        "csv",
+        "bim",
+        "auxiliary"
+      ]
+    },
+    "file_uri": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "row_count": {
+      "type": "integer"
+    },
+    "error_count": {
+      "type": "integer"
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "log_file_uri": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_type",
+    "status"
+  ]
+}

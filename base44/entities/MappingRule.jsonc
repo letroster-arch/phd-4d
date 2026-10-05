@@ -1,0 +1,35 @@
+{
+  "name": "MappingRule",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "bim_field": {
+      "type": "string"
+    },
+    "activity_field": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string",
+      "enum": [
+        "equals",
+        "contains",
+        "starts_with"
+      ]
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "bim_field",
+    "activity_field"
+  ]
+}

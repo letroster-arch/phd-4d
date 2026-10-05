@@ -1,0 +1,76 @@
+{
+  "name": "ConfigSpeckleConnection",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "server_url": {
+      "type": "string",
+      "default": "https://app.speckle.systems"
+    },
+    "auth_method": {
+      "type": "string",
+      "enum": [
+        "public",
+        "pat"
+      ]
+    },
+    "app_project_id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "model_name": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "referenced_object": {
+      "type": "string"
+    },
+    "last_sync_at": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "data_format": {
+      "type": "string"
+    },
+    "legacy_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "server_url"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

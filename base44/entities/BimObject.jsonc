@@ -1,0 +1,92 @@
+{
+  "name": "BimObject",
+  "type": "object",
+  "properties": {
+    "server_url": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "referenced_object": {
+      "type": "string"
+    },
+    "application_id": {
+      "type": "string"
+    },
+    "speckle_object_id": {
+      "type": "string"
+    },
+    "object_index": {
+      "type": "integer"
+    },
+    "source_guid": {
+      "type": "string"
+    },
+    "ifc_guid": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "discipline": {
+      "type": "string"
+    },
+    "system": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "cwa": {
+      "type": "string"
+    },
+    "cwp": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "wbs": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "properties_json": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "properties_file_uri": {
+      "type": "string"
+    },
+    "data_format": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "last_sync_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "speckle_object_id",
+    "version_id"
+  ]
+}

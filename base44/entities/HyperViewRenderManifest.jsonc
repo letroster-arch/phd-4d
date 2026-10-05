@@ -1,0 +1,65 @@
+{
+  "name": "HyperViewRenderManifest",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "geometry_cache_key": {
+      "type": "string"
+    },
+    "render_cache_key": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "building",
+        "ready",
+        "partial",
+        "error"
+      ]
+    },
+    "format_version": {
+      "type": "string"
+    },
+    "total_chunks": {
+      "type": "integer"
+    },
+    "packed_chunks": {
+      "type": "integer"
+    },
+    "pack_count": {
+      "type": "integer"
+    },
+    "total_bytes": {
+      "type": "integer"
+    },
+    "target_pack_bytes": {
+      "type": "integer"
+    },
+    "source_geometry_format": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "error_message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "model_id",
+    "version_id",
+    "render_cache_key",
+    "status",
+    "format_version"
+  ]
+}

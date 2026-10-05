@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "cache_key": {
+      "type": "string"
+    },
+    "manifest_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "format_version": {
+      "type": "string"
+    },
+    "chunk_index": {
+      "type": "integer"
+    },
+    "file_uri": {
+      "type": "string"
+    },
+    "compression": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "lod": {
+      "type": "integer"
+    },
+    "object_count": {
+      "type": "integer"
+    },
+    "instance_count": {
+      "type": "integer"
+    },
+    "unique_geometry_count": {
+      "type": "integer"
+    },
+    "object_index_min": {
+      "type": "integer"
+    },
+    "object_index_max": {
+      "type": "integer"
+    },
+    "bounds_json": {
+      "type": "string"
+    },
+    "center_json": {
+      "type": "string"
+    },
+    "raw_bytes": {
+      "type": "integer"
+    },
+    "packed_bytes": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "cache_key",
+    "chunk_index",
+    "file_uri",
+    "format_version"
+  ],
+  "name": "GeometryCacheChunk"
+}

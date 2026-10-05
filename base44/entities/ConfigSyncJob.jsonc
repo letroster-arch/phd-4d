@@ -1,0 +1,40 @@
+{
+  "name": "ConfigSyncJob",
+  "type": "object",
+  "properties": {
+    "connection_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "finished_at": {
+      "type": "string"
+    },
+    "processed_count": {
+      "type": "integer"
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "cursor": {
+      "type": "string"
+    },
+    "error_message": {
+      "type": "string"
+    },
+    "log_file_uri": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "connection_id",
+    "status"
+  ]
+}

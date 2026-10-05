@@ -1,0 +1,70 @@
+/* Shared engineering-workspace presentation across every application module. */
+@media (min-width: 768px) {
+  .phd-app .app-header { height: 58px; min-height: 58px; }
+  .phd-app .brand-slot { height: 58px; }
+  .phd-app .phd-logo { width: 150px; height: 51px; }
+  .phd-app .header-module { justify-content: center; min-width: 130px; height: 100%; gap: 3px; }
+  .phd-app .header-module strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+  .phd-app .header-module small, .phd-app .header-data small, .phd-app .project-picker small, .phd-app .user-trigger small { font-size: 10px; line-height: 1.2; }
+  .phd-app .header-module strong, .phd-app .header-data strong, .phd-app .project-picker strong { font-size: 12px; }
+  .phd-app .project-picker { height: 40px; border-radius: 5px; }
+  .phd-app .model-link, .phd-app .theme-toggle { min-height: 36px; border-radius: 5px; }
+  .phd-app .app-sidebar { background: var(--phd-surface); }
+  .phd-app .nav-heading { min-height: 48px; }
+  .phd-app .nav-item { height: 42px; border-radius: 0 5px 5px 0; }
+  .phd-app .nav-group { padding-top: 13px; padding-bottom: 16px; }
+  .phd-app .settings-page { background: var(--phd-soft); }
+  .phd-app .settings-card, .phd-app .module-panel, .phd-app .module-empty, .phd-app .source-card, .phd-app .security-card { border-radius: 7px; box-shadow: 0 4px 18px rgba(31,58,84,.055); }
+  .phd-app .settings-grid, .phd-app .data-sources, .phd-app .module-grid, .phd-app .module-empty, .phd-app .module-page .settings-title { max-width: none; }
+  .phd-app .settings-title h1 { font-size: 25px; }
+  .phd-app .page-breadcrumb { margin-bottom: 23px; }
+  .phd-app .module-toolbar input, .phd-app .module-toolbar select, .phd-app .settings-field input, .phd-app .settings-field select { border-radius: 5px; }
+  .phd-app .module-summary > span, .phd-app .protocol-badge { border-radius: 5px; }
+}
+@media (min-width: 1800px) {
+  .phd-app .app-header { height: 86px; min-height: 86px; }
+  .phd-app .brand-slot { height: 86px; }
+  .phd-app .phd-logo { width: 255px; max-width: calc(100% - 10px); height: 74px; }
+  .phd-app .header-module { width: 170px; min-width: 170px; padding: 0 17px; }
+  .phd-app .header-module small, .phd-app .header-data small, .phd-app .project-picker small, .phd-app .user-trigger small { font-size: 10px; }
+  .phd-app .header-module strong, .phd-app .header-data strong, .phd-app .project-picker strong, .phd-app .user-trigger { font-size: 12px; }
+  .phd-app .header-data { min-width: 105px; max-width: 170px; padding: 0 15px; }
+  .phd-app .project-picker { max-width: 510px; height: 56px; padding: 0 16px; }
+  .phd-app .model-link, .phd-app .theme-toggle { min-height: 52px; font-size: 11px; padding: 0 12px; }
+  .phd-app .model-link small { font-size: 10px; }
+  .phd-app .user-trigger { height: 52px; max-width: 165px; padding: 0 15px; }
+  .phd-app .user-trigger > span { max-width: 105px; }
+  .phd-app .nav-heading { min-height: 68px; font-size: 11px; }
+  .phd-app .nav-group-title { font-size: 11px; padding: 12px 12px 15px; }
+  .phd-app .nav-item { height: 56px; font-size: 11px; gap: 15px; padding: 0 13px; }
+  .phd-app .nav-group { padding: 17px 0 20px; }
+  .phd-app .sidebar-footer, .phd-app .sidebar-footer > div, .phd-app .sidebar-footer .version-label { font-size: 11px; }
+  .phd-app .settings-page { padding: 30px 36px 45px; font-size: 11px; }
+  .phd-app .settings-title h1 { font-size: 24px; }
+  .phd-app .settings-title p, .phd-app .page-breadcrumb, .phd-app .module-panel p, .phd-app .module-row, .phd-app .module-empty { font-size: 11px; }
+  .phd-app .module-panel h2, .phd-app .settings-card h2 { font-size: 12px; }
+  .phd-app .module-grid { gap: 20px; }
+  .phd-app .module-panel, .phd-app .module-empty { padding: 26px; }
+  .phd-app .module-panel strong.metric { font-size: 24px; }
+  .phd-app .module-toolbar input, .phd-app .module-toolbar select, .phd-app .module-toolbar button { height: 43px; font-size: 11px; }
+  .phd-app .settings-field input, .phd-app .settings-field select { height: 43px; font-size: 11px; }
+  .phd-app .source-card h2 { font-size: 14px; }
+  .phd-app .source-card p { font-size: 11px; }
+  .phd-app .twin-workspace .panel-heading { min-height: 64px; }
+  .phd-app .twin-workspace .panel-heading h2 { font-size: 12px; }
+  .phd-app .twin-workspace .panel-tabs { min-height: 58px; }
+  .phd-app .twin-workspace .panel-tabs button { font-size: 11px; }
+  .phd-app .twin-workspace .intelligence-panel .panel-tabs button { font-size: 10px; }
+  .phd-app .twin-workspace .viewer-stage-heading, .phd-app .twin-workspace .stage-tab { height: 64px; min-height: 64px; font-size: 11px; }
+  .phd-app .twin-workspace .hierarchy-search .search-field { height: 48px; }
+  .phd-app .twin-workspace .hierarchy-search input { font-size: 11px; }
+  .phd-app .twin-workspace .virtual-tree .tree-row, .phd-app .twin-workspace .virtual-tree .tree-node, .phd-app .twin-workspace .tree-node span { font-size: 11px; }
+  .phd-app .twin-workspace .viewer-empty h1 { font-size: 22px; }
+  .phd-app .twin-workspace .viewer-empty p, .phd-app .twin-workspace .object-note, .phd-app .twin-workspace .selection-instruction p, .phd-app .twin-workspace .property-row, .phd-app .twin-workspace .empty-property-section { font-size: 11px; }
+  .phd-app .twin-workspace .viewer-toolbar .tech-button, .phd-app .twin-workspace .viewer-side-tools .tech-button { width: 40px; height: 40px; min-width: 40px; }
+  .phd-app .twin-workspace .viewer-toolbar svg, .phd-app .twin-workspace .viewer-side-tools svg { width: 19px; height: 19px; }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .phd-app .header-module { display: none; }
+  .phd-app .nav-item { height: 40px; }
+}

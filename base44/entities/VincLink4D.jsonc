@@ -1,0 +1,41 @@
+{
+  "name": "VincLink4D",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "bim_object_id": {
+      "type": "string"
+    },
+    "schedule_activity_id": {
+      "type": "string"
+    },
+    "mapping_rule_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved"
+      ]
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "bulk",
+        "rule"
+      ]
+    },
+    "reviewed_by": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "bim_object_id",
+    "schedule_activity_id"
+  ]
+}

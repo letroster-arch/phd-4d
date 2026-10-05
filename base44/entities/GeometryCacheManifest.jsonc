@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "cache_key": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "building",
+        "ready",
+        "partial",
+        "error"
+      ]
+    },
+    "format_version": {
+      "type": "string"
+    },
+    "total_objects": {
+      "type": "integer"
+    },
+    "cached_objects": {
+      "type": "integer"
+    },
+    "total_chunks": {
+      "type": "integer"
+    },
+    "cached_chunks": {
+      "type": "integer"
+    },
+    "total_bytes": {
+      "type": "integer"
+    },
+    "chunks_json": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "error_message": {
+      "type": "string"
+    },
+    "next_batch_index": {
+      "type": "integer"
+    },
+    "total_batches": {
+      "type": "integer"
+    },
+    "next_object_offset": {
+      "type": "integer"
+    },
+    "preparation_batch_size": {
+      "type": "integer"
+    },
+    "last_checkpoint_at": {
+      "type": "string"
+    },
+    "upload_failures": {
+      "type": "integer"
+    },
+    "ingest_phase": {
+      "type": "string"
+    },
+    "ingest_progress": {
+      "type": "number"
+    },
+    "ingest_detail": {
+      "type": "string"
+    },
+    "source_index_uri": {
+      "type": "string"
+    },
+    "server_side": {
+      "type": "boolean"
+    },
+    "last_heartbeat_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "model_id",
+    "version_id",
+    "cache_key",
+    "status",
+    "format_version"
+  ],
+  "name": "GeometryCacheManifest"
+}
